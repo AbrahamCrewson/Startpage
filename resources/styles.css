@@ -1,0 +1,122 @@
+*{
+    background-color: #F6D48A;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    background-color: transparent;
+}
+html{
+    font-size: 16px;
+}
+/* Navbar content */
+header{
+    position: fixed;
+    display: inline-flex;
+    top:0;
+    left:0;
+    background-color:rgba(70,55,44,0.5);
+    width:100%;
+    z-index: 5;
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgb(249, 231, 231);
+}
+header img{
+    height: 4rem;
+    width: auto;
+    z-index: 6; 
+    background-color: transparent;
+}  
+.banner{
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.banner h1{
+    font-family: 'Yellowtail';
+    color: #5A4E47;
+    z-index: 4;
+    overflow: visible;
+    background-color: transparent;
+}
+.banner #title1{
+    position: absolute;
+}
+.banner #title2{
+    position: absolute;
+    top:17rem;
+}
+.banner img{
+    width: 20.25rem;
+    height: auto;
+    z-index: 3;
+    margin-top:2.5rem;
+    margin-bottom: 2.5rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 11.5rem;
+    width:9.5rem;
+    background-color: #C4995B;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 2rem;
+    
+}
+.card img{
+    height: auto;
+    width:4.75rem;
+    object-fit:contain;
+    background-color: transparent;
+    padding: 1rem 2rem;
+}
+.card #backing{
+    background-color: rgba(32,30,30,0.45);
+    height: 6.74rem;
+    width:auto
+    
+}
+.card div{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.card h2{
+    background-color: transparent;
+    color:#3C2412;
+    font-size: 24px;
+   
+   
+}
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: 1rem 0rem;
+    width: 100%;
+}
+@media only screen and (max-width:1170px) and (min-width:720px){
+    .container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width:719px) and (min-width:450px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+}
+@media only screen and (max-width:449px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(10,1fr);
+    }
+}
